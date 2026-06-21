@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易游体育 · 运动内容与体验</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f4f0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d231f;
+            padding: 0 1.2rem;
+        }
+
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2.8rem 0 3.6rem;
+        }
+
+        /* 标题层级 */
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #6d7a72;
+            border: 1px solid #cbd2c6;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            margin-bottom: 1.6rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+            color: #152118;
+            margin-bottom: 1.2rem;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #49564b;
+            max-width: 580px;
+            margin-bottom: 2.6rem;
+            border-left: 2px solid #b7c3b0;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            border-bottom: 1px solid #d6ddd4;
+            padding-bottom: 0.4rem;
+            margin: 2.8rem 0 1.2rem;
+            color: #1f2c22;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 450;
+            margin-top: 1.2rem;
+            margin-bottom: 0.4rem;
+            color: #2f3d32;
+        }
+
+        p {
+            margin-bottom: 1.15rem;
+            font-size: 0.95rem;
+            color: #2b372d;
+        }
+
+        a {
+            color: #2b6b40;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b3c9b2;
+            transition: color 0.15s, text-decoration-color 0.15s;
+        }
+
+        a:hover {
+            color: #144d28;
+            text-decoration-color: #2b6b40;
+        }
+
+        .inline-link {
+            background: transparent;
+        }
+
+        /* 卡片 —— 极简留白 */
+        .card-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.8rem 0 1rem;
+        }
+
+        .card-item {
+            flex: 1 1 170px;
+            background: white;
+            padding: 1.2rem 1rem;
+            border-radius: 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.03);
+            border: 1px solid #e5eae3;
+        }
+
+        .card-item h4 {
+            font-weight: 450;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .card-item p {
+            font-size: 0.85rem;
+            color: #4e5d51;
+        }
+
+        .scene-list {
+            list-style: none;
+            margin: 0.6rem 0 1.2rem 0.2rem;
+        }
+
+        .scene-list li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #2d3b30;
+        }
+
+        .scene-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #95a895;
+        }
+
+        .faq-item {
+            margin-top: 1.6rem;
+            padding: 0.8rem 0;
+            border-top: 1px solid #e2e8e0;
+        }
+
+        .faq-item:first-of-type {
+            border-top: none;
+            margin-top: 0.4rem;
+        }
+
+        .faq-q {
+            font-weight: 450;
+            color: #1d2a1f;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-a {
+            font-size: 0.9rem;
+            color: #4d5e50;
+        }
+
+        .footnote {
+            margin-top: 3rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dbe2d8;
+            font-size: 0.8rem;
+            color: #6d7f72;
+            text-align: left;
+        }
+
+        @media (max-width: 480px) {
+            .page {
+                padding: 2rem 0 2.8rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .card-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <div class="badge">运动 · 内容 · 体验</div>
+
+    <h1>易游体育<br>围绕主题展开的叙述</h1>
+    <div class="subhead">
+        从关键词背后的内容出发，不止于平台，更关于一种自然的运动生活方式。
+    </div>
+
+    <!-- 摘要式引入 -->
+    <p>
+        当我们谈论体育时，往往先想到竞技、比分与训练计划。但另一种视角同样重要：体育是一种日常叙事，是个人节奏与外界空间的交汇。<a href="https://hub-yysports.com">易游体育</a>所呈现的内容，便试图捕捉这种交汇——不刻意渲染宏大，而是从具体场景、运动习惯以及内容本身出发，为使用者提供一种可读、可参考、可安静浏览的线上体验。
+    </p>
+
+    <!-- 亮点卡片组：极简表意 -->
+    <h2>几个可关注的侧面</h2>
+    <div class="card-group">
+        <div class="card-item">
+            <h4>内容视线</h4>
+            <p>围绕运动项目、装备与个人经验展开的文字与影像，不追求爆款，更在意平实叙述。</p>
+        </div>
+        <div class="card-item">
+            <h4>节奏选择</h4>
+            <p>信息密度适中，浏览者可以随时停下，也可以逐篇阅读，没有强推送感。</p>
+        </div>
+        <div class="card-item">
+            <h4>界面克制</h4>
+            <p>视觉层不做多余装饰，功能清晰，留白充分，适合专注阅读或短时参考。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议：从叙述出发 -->
+    <h2>使用建议 · 场景与态度</h2>
+    <p>
+        你可以把「易游体育」当作一个安静的内容角落。适合在以下时刻打开：想了解某项运动的入门视角、寻找不一样的装备解读、或者只是想在碎片时间里读一篇千字以内的运动随笔。不需要注册，不需要留下数据，页面本身已经呈现。
+    </p>
+
+    <ul class="scene-list">
+        <li>运动前的心理准备——读一篇关于耐力与节奏的短记</li>
+        <li>挑选装备时的参考——看实物拍摄与不夸张的描述</li>
+        <li>恢复日的轻浏览——避免算法轰炸，回到文字本身</li>
+    </ul>
+
+    <!-- 可信但克制的访问说明 -->
+    <h2>一些说明，也是态度</h2>
+    <p>
+        网站不会主动收集个人信息，不设强迫登录，也没有弹窗式引导。内容的更新频率适度，不追求每日产出。如果你愿意，可以把这里当作一个运动类书签——需要时过来看看，不需要时也不必惦记。这种克制的距离，本身也算是一种对体育精神的理解：自主、冷静、不过度消耗注意力。
+    </p>
+
+    <!-- FAQ 摘要（自然嵌入） -->
+    <h2>常见想法 · 简短回答</h2>
+
+    <div class="faq-item">
+        <div class="faq-q">—— 网站适合所有人吗？</div>
+        <div class="faq-a">主要面向对运动内容有兴趣的普通浏览者，不针对专业运动员或教练群体，但后者也可能在细节叙述中找到共鸣。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">—— 内容偏向哪种运动？</div>
+        <div class="faq-a">涉及户外、球类、基础体能以及部分小众项目，但不设严格分类，更多以主题为单位呈现。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">—— 需要下载或付费吗？</div>
+        <div class="faq-a">完全基于浏览器，无需安装任何程序，目前也没有付费计划。一切内容公开可读。</div>
+    </div>
+
+    <!-- 再次自然嵌入链接，符合要求 -->
+    <p style="margin-top: 2rem;">
+        如果你想了解更具体的文章与主题，直接前往 <a href="https://hub-yysports.com">易游体育</a> 即可。页面结构简单，目录清晰，适合安静浏览。
+    </p>
+
+    <div class="footnote">
+        易游体育 · 从主题展开，保持距离与真诚
+    </div>
+
+</div>
+</body>
+</html>
